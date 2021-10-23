@@ -548,28 +548,10 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/hexo%E5%8D%9A%E5%AE%A2/" title="hexo博客: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="hexo博客" style="background-color: #F9EBEA;">hexo博客
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/Markdown/" title="Markdown: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Markdown" style="background-color: #F5EEF8;">Markdown
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/jQuery-CSS3/" title="jQuery+CSS3: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="jQuery+CSS3" style="background-color: #D5F5E3;">jQuery+CSS3
+                            data-tagname="jQuery+CSS3" style="background-color: #F9EBEA;">jQuery+CSS3
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -578,7 +560,25 @@
                 <a href="/tags/%E7%B2%92%E5%AD%90%E7%89%B9%E6%95%88/" title="粒子特效: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="粒子特效" style="background-color: #E8F8F5;">粒子特效
+                            data-tagname="粒子特效" style="background-color: #F5EEF8;">粒子特效
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/hexo%E5%8D%9A%E5%AE%A2/" title="hexo博客: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="hexo博客" style="background-color: #D5F5E3;">hexo博客
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Markdown/" title="Markdown: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Markdown" style="background-color: #E8F8F5;">Markdown
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -1038,6 +1038,16 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
 <script>
             window.imageLazyLoadSetting = {

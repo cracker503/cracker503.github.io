@@ -789,7 +789,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"hexo博客","value":1},{"name":"前端篇","value":1},{"name":"Markdown","value":1}],
+                data: [{"name":"前端篇","value":1},{"name":"hexo博客","value":1},{"name":"Markdown","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -813,7 +813,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["hexo博客","Markdown","jQuery+CSS3","粒子特效"]
+                data: ["jQuery+CSS3","粒子特效","hexo博客","Markdown"]
             }
         ],
         yAxis: [
@@ -933,18 +933,6 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/hexo%E5%8D%9A%E5%AE%A2/">
-                <span class="chip center-align waves-effect waves-light chip-default">hexo博客</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Markdown/">
-                <span class="chip center-align waves-effect waves-light chip-default">Markdown</span>
-            </a>
-            
-            
-            
             <a href="/tags/jQuery-CSS3/">
                 <span class="chip center-align waves-effect waves-light chip-default">jQuery+CSS3</span>
             </a>
@@ -953,6 +941,18 @@
             
             <a href="/tags/%E7%B2%92%E5%AD%90%E7%89%B9%E6%95%88/">
                 <span class="chip center-align waves-effect waves-light chip-default">粒子特效</span>
+            </a>
+            
+            
+            
+            <a href="/tags/hexo%E5%8D%9A%E5%AE%A2/">
+                <span class="chip center-align waves-effect waves-light chip-default">hexo博客</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Markdown/">
+                <span class="chip center-align waves-effect waves-light chip-default">Markdown</span>
             </a>
             
             
@@ -1470,6 +1470,16 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
 <script>
             window.imageLazyLoadSetting = {

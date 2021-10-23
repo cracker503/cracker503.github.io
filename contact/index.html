@@ -558,7 +558,7 @@
 <h2 id="友链"><a href="#友链" class="headerlink" title="友链"></a>友链</h2><hr>
 <p>Luckeyの友链信息</p>
 <p>博客名称: Luckeycsの博客</p>
-<p>博客网址: <a target="_blank" rel="noopener" href="https://cracker503.github.io/">https://cracker503.github.io/</a></p>
+<p>博客网址: <a href="https://cracker503.github.io/">https://cracker503.github.io/</a></p>
 <p>博客头像: <a target="_blank" rel="noopener" href="https://z3.ax1x.com/2021/10/22/5cFoGR.jpg">https://z3.ax1x.com/2021/10/22/5cFoGR.jpg</a></p>
 <p>博客介绍: The harder you work, the luckier you will be</p>
 
@@ -1288,6 +1288,16 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
 <script>
             window.imageLazyLoadSetting = {

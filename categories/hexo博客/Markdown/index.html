@@ -549,15 +549,15 @@
                 
                 
                 
-                <a href="/categories/hexo%E5%8D%9A%E5%AE%A2/" title="hexo博客: 1">
+                <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" title="前端篇: 1">
                   <div class="moleskine-wrapper">
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
                            chip-default "
-                                  style="background-color: #DF9AEF;">                                               
+                                  style="background-color: #2EE83F;">                                               
                               <div class="notebook-skin
                                    chip-default "
-                                  >hexo博客                                  
+                                  >前端篇                                  
                               </div>
                           </div>
                           <div class="notebook-page dotted"></div>
@@ -566,15 +566,15 @@
                 </a>
                 
                 
-                <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" title="前端篇: 1">
+                <a href="/categories/hexo%E5%8D%9A%E5%AE%A2/" title="hexo博客: 1">
                   <div class="moleskine-wrapper">
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
                            chip-default "
-                                  style="background-color: #2B1C19;">                                               
+                                  style="background-color: #B55159;">                                               
                               <div class="notebook-skin
                                    chip-default "
-                                  >前端篇                                  
+                                  >hexo博客                                  
                               </div>
                           </div>
                           <div class="notebook-page dotted"></div>
@@ -588,7 +588,7 @@
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
                            chip-active "
-                                  style="background-color: #887D34;">                                               
+                                  style="background-color: #E116D0;">                                               
                               <div class="notebook-skin
                                    chip-active "
                                   >Markdown                                  
@@ -1192,6 +1192,16 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
 <script>
             window.imageLazyLoadSetting = {
